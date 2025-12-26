@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PT HADAR ARTHA PRAKASA</title>
+    <meta name="description" content="Privacy Policy PT HADAR ARTHA PRAKASA - Kebijakan privasi untuk melindungi data pribadi klien dan pengunjung website">
+    <meta name="keywords" content="privacy policy, kebijakan privasi, PT HADAR ARTHA PRAKASA, perlindungan data">
+    <meta name="author" content="PT HADAR ARTHA PRAKASA">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #FF6B35;
+            --secondary-color: #F7931E;
+            --accent-color: #FFD23F;
+            --dark-color: #2C3E50;
+            --light-color: #ECF0F1;
+            --text-dark: #34495E;
+            --text-light: #7F8C8D;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo::before {
+            content: "🎨";
+            font-size: 1.8rem;
+            -webkit-text-fill-color: initial;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-2);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .back-button {
+            background: var(--gradient-2);
+            color: white !important;
+            padding: 0.7rem 1.5rem !important;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(240, 147, 251, 0.6);
+        }
+
+        /* Main Content */
+        .privacy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 2rem 3rem;
+            background: white;
+            margin-top: 80px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--light-color);
+        }
+
+        .privacy-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .privacy-subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .privacy-content {
+            margin-bottom: 3rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            margin-top: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            text-align: justify;
+        }
+
+        .section ul {
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(247, 147, 30, 0.1) 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .contact-info {
+            background: var(--gradient-1);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        .footer-content h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .footer-content p {
+            color: #bdc3c7;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 2rem;
+            padding-top: 2rem;
+            color: #bdc3c7;
+        }
+
+        .footer-bottom a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .privacy-container {
+                padding: 6rem 1rem 2rem;
+                margin: 70px 1rem 0;
+            }
+
+            .privacy-title {
+                font-size: 2rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .section h3 {
+                font-size: 1.2rem;
+            }
+
+            .section ul {
+                margin-left: 1.5rem;
+            }
+        }
+
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient-2);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(240, 147, 251, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">HADAR ARTHA PRAKASA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#services">Layanan</a></li>
+                <li><a href="index.html#about">Tentang</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+                <li><a href="index.html" class="back-button">Kembali</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="privacy-container">
+        <div class="privacy-header">
+            <h1 class="privacy-title">Privacy Policy</h1>
+            <p class="privacy-subtitle">Kebijakan Privasi <strong>PT HADAR ARTHA PRAKASA</strong></p>
+            <p class="last-updated">Terakhir diperbarui: 20 Agustus 2024</p>
+        </div>
+
+        <div class="privacy-content">
+            <div class="section">
+                <h2>🔒 Pendahuluan</h2>
+                <p>
+                    Selamat datang di kebijakan privasi <strong>PT HADAR ARTHA PRAKASA</strong>. Kami sangat memahami pentingnya privasi dan keamanan data pribadi Anda. Kebijakan ini menjelaskan bagaimana kami mengumpulkan, menggunakan, melindungi, dan membagi informasi pribadi Anda saat menggunakan website dan layanan kami.
+                </p>
+                <p>
+                    Dengan mengakses dan menggunakan website <strong>PT HADAR ARTHA PRAKASA</strong>, Anda menyetujui praktik-praktik yang dijelaskan dalam kebijakan privasi ini.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>📊 Informasi yang Kami Kumpulkan</h2>
+                <p>
+                    Kami dapat mengumpulkan berbagai jenis informasi dari Anda, termasuk:
+                </p>
+                <h3>Informasi Pribadi</h3>
+                <ul>
+                    <li>Nama lengkap</li>
+                    <li>Alamat email</li>
+                    <li>Nomor telepon</li>
+                    <li>Alamat perusahaan atau rumah</li>
+                    <li>Informasi pembayaran (jika berlaku)</li>
+                </ul>
+                
+                <h3>Informasi Teknis</h3>
+                <ul>
+                    <li>Alamat IP</li>
+                    <li>Jenis browser dan sistem operasi</li>
+                    <li>Informasi perangkat</li>
+                    <li>Cookie dan data pelacakan lainnya</li>
+                    <li>Halaman yang dikunjungi dan waktu kunjungan</li>
+                </ul>
+
+                <h3>Informasi Penggunaan</h3>
+                <ul>
+                    <li>Bagaimana Anda berinteraksi dengan website kami</li>
+                    <li>Konten yang Anda akses</li>
+                    <li>Fitur yang Anda gunakan</li>
+                    <li>Preferensi dan pengaturan Anda</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Cara Kami Menggunakan Informasi Anda</h2>
+                <p>
+                    <strong>PT HADAR ARTHA PRAKASA</strong> menggunakan informasi yang kami kumpulkan untuk:
+                </p>
+                <ul>
+                    <li><span class="highlight">Menyediakan layanan</span> - Untuk memberikan layanan periklanan, event, dan konsultasi yang Anda minta</li>
+                    <li><span class="highlight">Komunikasi</span> - Untuk menghubungi Anda mengenai layanan, proyek, atau pertanyaan Anda</li>
+                    <li><span class="highlight">Peningkatan layanan</span> - Untuk menganalisis dan meningkatkan kualitas website dan layanan kami</li>
+                    <li><span class="highlight">Marketing</span> - Untuk mengirimkan informasi tentang layanan baru, penawaran khusus, dan newsletter (dengan persetujuan Anda)</li>
+                    <li><span class="highlight">Keamanan</span> - Untuk melindungi website kami dan mencegah aktivitas ilegal atau penipuan</li>
+                    <li><span class="highlight">Kepatuhan hukum</span> - Untuk mematuhi kewajiban hukum dan peraturan yang berlaku</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🍪 Cookie dan Pelacakan</h2>
+                <p>
+                    Website <strong>PT HADAR ARTHA PRAKASA</strong> menggunakan cookie dan teknologi pelacakan serupa untuk meningkatkan pengalaman pengguna:
+                </p>
+                <h3>Cookie Esensial</h3>
+                <p>
+                    Cookie yang diperlukan untuk fungsi dasar website, seperti navigasi dan akses ke area aman.
+                </p>
+                
+                <h3>Cookie Kinerja</h3>
+                <p>
+                    Cookie yang membantu kami memahami bagaimana pengguna berinteraksi dengan website kami.
+                </p>
+                
+                <h3>Cookie Fungsional</h3>
+                <p>
+                    Cookie yang memungkinkan website kami mengingat pilihan Anda dan menyediakan fitur yang dipersonalisasi.
+                </p>
+                
+                <h3>Cookie Marketing</h3>
+                <p>
+                    Cookie yang digunakan untuk menampilkan iklan yang relevan dengan minat Anda.
+                </p>
+                <p>
+                    Anda dapat mengatur preferensi cookie melalui pengaturan browser Anda.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>🔐 Keamanan Data</h2>
+                <p>
+                    <strong>PT HADAR ARTHA PRAKASA</strong> berkomitmen untuk melindungi keamanan data pribadi Anda. Kami menerapkan berbagai langkah keamanan, termasuk:
+                </p>
+                <ul>
+                    <li>Enkripsi data saat transmisi dan penyimpanan</li>
+                    <li>Akses terbatas ke data pribadi</li>
+                    <li>Firewall dan sistem keamanan yang canggih</li>
+                    <li>Audit keamanan reguler</li>
+                    <li>Pelatihan staf tentang perlindungan data</li>
+                </ul>
+                <p>
+                    Namun, perlu diingat bahwa tidak ada metode transmisi internet atau penyimpanan elektronik yang 100% aman.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>🤝 Berbagi Informasi dengan Pihak Ketiga</h2>
+                <p>
+                    Kami tidak menjual, memperdagangkan, atau mentransfer data pribadi Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali dalam keadaan berikut:
+                </p>
+                <ul>
+                    <li><span class="highlight">Mitra bisnis</span> - Kami dapat berbagi informasi dengan mitra tepercaya yang membantu kami menyediakan layanan</li>
+                    <li><span class="highlight">Penyedia layanan</span> - Kami menggunakan pihak ketiga untuk mengoperasikan bisnis kami (hosting, analytics, dll)</li>
+                    <li><span class="highlight">Kewajiban hukum</span> - Kami dapat mengungkapkan informasi jika diwajibkan oleh hukum atau untuk melindungi hak kami</li>
+                    <li><span class="highlight">Transfer bisnis</span> - Jika terjadi merger, akuisisi, atau penjualan aset, data dapat ditransfer</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>👤 Hak Anda sebagai Pengguna</h2>
+                <p>
+                    Sebagai pemilik data pribadi, Anda memiliki hak-hak berikut sesuai dengan peraturan perlindungan data yang berlaku:
+                </p>
+                <ul>
+                    <li><span class="highlight">Hak akses</span> - Hak untuk mengetahui data pribadi yang kami simpan tentang Anda</li>
+                    <li><span class="highlight">Hak koreksi</span> - Hak untuk memperbaiki data pribadi yang tidak akurat</li>
+                    <li><span class="highlight">Hak penghapusan</span> - Hak untuk meminta penghapusan data pribadi Anda</li>
+                    <li><span class="highlight">Hak pembatasan</span> - Hak untuk membatasi pemrosesan data pribadi Anda</li>
+                    <li><span class="highlight">Hak portabilitas</span> - Hak untuk menerima data pribadi Anda dalam format terstruktur</li>
+                    <li><span class="highlight">Hak penolakan</span> - Hak untuk menolak pemrosesan data pribadi Anda</li>
+                </ul>
+                <p>
+                    Untuk menggunakan hak-hak ini, silakan hubungi kami melalui informasi kontak di bawah.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>👶 Perlindungan Data Anak</h2>
+                <p>
+                    Website <strong>PT HADAR ARTHA PRAKASA</strong> tidak ditujukan untuk anak-anak di bawah 18 tahun. Kami tidak sengaja mengumpulkan informasi pribadi dari anak-anak. Jika kami mengetahui bahwa kami telah mengumpulkan informasi pribadi dari anak tanpa persetujuan orang tua, kami akan mengambil langkah untuk menghapus informasi tersebut segera.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>🌍 Transfer Data Internasional</h2>
+                <p>
+                    Data pribadi Anda dapat ditransfer dan diproses di luar negara Anda oleh penyedia layanan kami. Kami memastikan bahwa transfer data tersebut dilakukan dengan perlindungan yang memadai sesuai dengan peraturan yang berlaku.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>📝 Perubahan Kebijakan Privasi</h2>
+                <p>
+                    <strong>PT HADAR ARTHA PRAKASA</strong> dapat memperbarui kebijakan privasi ini dari waktu ke waktu untuk mencerminkan perubahan dalam praktik kami atau peraturan yang berlaku. Kami akan memberitahukan Anda tentang perubahan signifikan melalui website atau email.
+                </p>
+                <p>
+                    Tanggal terakhir pembaruan: 20 Agustus 2024
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>📞 Hubungi Kami</h2>
+                <p>
+                    Jika Anda memiliki pertanyaan, keluhan, atau permintaan terkait kebijakan privasi ini atau perlindungan data pribadi Anda, silakan hubungi kami:
+                </p>
+                
+                <div class="contact-info">
+                    <h3>🏢 PT HADAR ARTHA PRAKASA</h3>
+                    <p><strong>Alamat:</strong> Jl. Masjid Al-Khoir 2 No. 88B, Cilangkap, Cipayung, Jakarta Timur 13870</p>
+                    <p><strong>Email:</strong> privacy@hadararthaprakasa.co.id</p>
+                    <p><strong>Telepon:</strong> +62 823-1059-8328</p>
+                    <p><strong>Website:</strong> www.hadararthaprakasa.co.id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>PT HADAR ARTHA PRAKASA</h3>
+            <p>
+                Mitra kreatif terpercaya untuk solusi periklanan, event, dan digital marketing terdepan di Indonesia. Privasi Anda adalah prioritas kami.
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 <strong>PT HADAR ARTHA PRAKASA</strong>. All rights reserved. | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-to-top" id="scrollToTop">↑</a>
+
+    <script>
+        // Scroll to top functionality
+        const scrollToTop = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTop.classList.add('visible');
+            } else {
+                scrollToTop.classList.remove('visible');
+            }
+        });
+        
+        scrollToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation to sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply observer to sections
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Console branding
+        console.log('%c🔒 PT HADAR ARTHA PRAKASA - Privacy Policy', 'font-size: 20px; font-weight: bold; color: #FF6B35;');
+        console.log('%cYour privacy is our priority! 🛡️', 'font-size: 14px; color: #F7931E;');
+    </script>
+</body>
+</html>

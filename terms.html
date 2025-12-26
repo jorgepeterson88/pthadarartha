@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - PT HADAR ARTHA PRAKASA</title>
+    <meta name="description" content="Terms and Conditions PT HADAR ARTHA PRAKASA - Syarat dan ketentuan penggunaan website dan layanan kami">
+    <meta name="keywords" content="terms and conditions, syarat ketentuan, PT HADAR ARTHA PRAKASA, perjanjian layanan">
+    <meta name="author" content="PT HADAR ARTHA PRAKASA">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #FF6B35;
+            --secondary-color: #F7931E;
+            --accent-color: #FFD23F;
+            --dark-color: #2C3E50;
+            --light-color: #ECF0F1;
+            --text-dark: #34495E;
+            --text-light: #7F8C8D;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, rgba(67, 233, 123, 0.05) 0%, rgba(56, 249, 215, 0.05) 100%);
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo::before {
+            content: "🎨";
+            font-size: 1.8rem;
+            -webkit-text-fill-color: initial;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-4);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .back-button {
+            background: var(--gradient-4);
+            color: white !important;
+            padding: 0.7rem 1.5rem !important;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 233, 123, 0.4);
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 233, 123, 0.6);
+        }
+
+        /* Main Content */
+        .terms-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 2rem 3rem;
+            background: white;
+            margin-top: 80px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .terms-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--light-color);
+        }
+
+        .terms-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient-4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .terms-subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .terms-content {
+            margin-bottom: 3rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            margin-top: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            text-align: justify;
+        }
+
+        .section ul {
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(67, 233, 123, 0.1) 0%, rgba(56, 249, 215, 0.1) 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(247, 147, 30, 0.1) 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+
+        .warning-box h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%);
+            border-left: 4px solid #4facfe;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+
+        .info-box h4 {
+            color: #4facfe;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            background: var(--gradient-4);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        .footer-content h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .footer-content p {
+            color: #bdc3c7;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 2rem;
+            padding-top: 2rem;
+            color: #bdc3c7;
+        }
+
+        .footer-bottom a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .terms-container {
+                padding: 6rem 1rem 2rem;
+                margin: 70px 1rem 0;
+            }
+
+            .terms-title {
+                font-size: 2rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .section h3 {
+                font-size: 1.2rem;
+            }
+
+            .section ul {
+                margin-left: 1.5rem;
+            }
+        }
+
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient-4);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 233, 123, 0.4);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(67, 233, 123, 0.6);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .toc h3 {
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">HADAR ARTHA PRAKASA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#services">Layanan</a></li>
+                <li><a href="index.html#about">Tentang</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+                <li><a href="index.html" class="back-button">Kembali</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="terms-container">
+        <div class="terms-header">
+            <h1 class="terms-title">Terms and Conditions</h1>
+            <p class="terms-subtitle">Syarat dan Ketentuan Penggunaan <strong>PT HADAR ARTHA PRAKASA</strong></p>
+            <p class="last-updated">Terakhir diperbarui: 20 Agustus 2024</p>
+        </div>
+
+        <div class="terms-content">
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3>📋 Daftar Isi</h3>
+                <ul>
+                    <li><a href="#pendahuluan">1. Pendahuluan</a></li>
+                    <li><a href="#definisi">2. Definisi</a></li>
+                    <li><a href="#penggunaan-website">3. Penggunaan Website</a></li>
+                    <li><a href="#layanan">4. Layanan</a></li>
+                    <li><a href="#kepemilikan-kekayaan-intelektual">5. Kepemilikan Kekayaan Intelektual</a></li>
+                    <li><a href="#kewajiban-pengguna">6. Kewajiban Pengguna</a></li>
+                    <li><a href="#pembatasan-kerugian">7. Pembatasan Kerugian</a></li>
+                    <li><a href="#privasi">8. Privasi dan Data Pribadi</a></li>
+                    <li><a href="#perubahan-layanan">9. Perubahan Layanan</a></li>
+                    <li><a href="#perubahan-syarat-ketentuan">10. Perubahan Syarat dan Ketentuan</a></li>
+                    <li><a href="#hukum-yang-berlaku">11. Hukum yang Berlaku</a></li>
+                    <li><a href="#kontak">12. Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="section" id="pendahuluan">
+                <h2>📖 1. Pendahuluan</h2>
+                <p>
+                    Selamat datang di website dan layanan <strong>PT HADAR ARTHA PRAKASA</strong>. Syarat dan Ketentuan ini ("Syarat") mengatur penggunaan website www.hadararthaprakasa.co.id ("Website") dan semua layanan yang disediakan oleh <strong>PT HADAR ARTHA PRAKASA</strong> ("Perusahaan," "kami," "kita").
+                </p>
+                <p>
+                    Dengan mengakses, menggunakan, atau mengunjungi Website kami, Anda ("Pengguna," "Anda") setuju untuk terikat oleh Syarat ini. Jika Anda tidak setuju dengan Syarat ini, jangan menggunakan Website atau layanan kami.
+                </p>
+                
+                <div class="warning-box">
+                    <h4>⚠️ PENTING</h4>
+                    <p>Syarat ini merupakan perjanjian yang mengikat secara hukum antara Anda dan <strong>PT HADAR ARTHA PRAKASA</strong>. Harap baca dengan saksama sebelum menggunakan layanan kami.</p>
+                </div>
+            </div>
+
+            <div class="section" id="definisi">
+                <h2>📝 2. Definisi</h2>
+                <p>
+                    Dalam Syarat ini, istilah-istilah berikut memiliki makna sebagai berikut:
+                </p>
+                <ul>
+                    <li><span class="highlight">"Website"</span> - Situs web www.hadararthaprakasa.co.id dan semua subdomain serta halaman terkait.</li>
+                    <li><span class="highlight">"Layanan"</span> - Semua layanan yang disediakan oleh Perusahaan, termasuk periklanan, event organizer, desain grafis, digital marketing, dan konsultasi.</li>
+                    <li><span class="highlight">"Konten"</span> - Semua materi yang tersedia di Website, termasuk teks, gambar, video, logo, desain, dan materi lainnya.</li>
+                    <li><span class="highlight">"Pengguna"</span> - Individu atau entitas yang mengakses atau menggunakan Website dan/atau Layanan kami.</li>
+                    <li><span class="highlight">"Klien"</span> - Pengguna yang menggunakan Layanan berbayar dari Perusahaan.</li>
+                    <li><span class="highlight">"Data Pribadi"</span> - Informasi tentang individu yang dapat diidentifikasi.</li>
+                </ul>
+            </div>
+
+            <div class="section" id="penggunaan-website">
+                <h2>🌐 3. Penggunaan Website</h2>
+                <p>
+                    Anda setuju untuk menggunakan Website hanya untuk tujuan yang sah dan sesuai dengan hukum yang berlaku. Anda tidak diperkenankan:
+                </p>
+                <ul>
+                    <li>Menggunakan Website untuk tujuan ilegal atau tidak sah</li>
+                    <li>Mengirim, mengunggah, atau menyebarkan konten yang melanggar hukum, vulgar, atau tidak pantas</li>
+                    <li>Mencoba mendapatkan akses tidak sah ke sistem atau data kami</li>
+                    <li> Mengganggu atau merusak fungsi Website</li>
+                    <li>Menggunakan bot, crawler, atau teknologi otomatis lainnya tanpa izin tertulis</li>
+                    <li>Meniru identitas orang lain atau entitas</li>
+                    <li>Melanggar hak kekayaan intelektual pihak ketiga</li>
+                </ul>
+                
+                <div class="info-box">
+                    <h4>💡 INFORMASI</h4>
+                    <p>Kami berhak membatasi atau menangguhkan akses Anda ke Website jika Anda melanggar Syarat ini.</p>
+                </div>
+            </div>
+
+            <div class="section" id="layanan">
+                <h2>🎯 4. Layanan</h2>
+                <p>
+                    <strong>PT HADAR ARTHA PRAKASA</strong> menyediakan berbagai layanan kreatif dan profesional:
+                </p>
+                
+                <h3>Layanan Periklanan dan Branding</h3>
+                <ul>
+                    <li>Perencanaan strategi periklanan</li>
+                    <li>Desain dan produksi materi iklan</li>
+                    <li>Manajemen kampanye periklanan</li>
+                    <li>Brand development dan rebranding</li>
+                </ul>
+
+                <h3>Layanan Event Organizer</h3>
+                <ul>
+                    <li>Perencanaan dan konsep event</li>
+                    <li>Manajemen produksi event</li>
+                    <li>Koordinasi vendor dan supplier</li>
+                    <li>Manajemen on-site event</li>
+                </ul>
+
+                <h3>Layanan Digital dan Kreatif</h3>
+                <ul>
+                    <li>Desain grafis dan visual communication</li>
+                    <li>Digital marketing dan social media management</li>
+                    <li>Produksi konten (video, foto, tulisan)</li>
+                    <li>Konsultasi strategi marketing</li>
+                </ul>
+
+                <h3>Pemesanan dan Pembayaran</h3>
+                <p>
+                    Pemesanan layanan dapat dilakukan melalui form kontak, email, atau telepon. Pembayaran dilakukan sesuai dengan kesepakatan yang dituangkan dalam kontrak atau perjanjian kerja sama.
+                </p>
+            </div>
+
+            <div class="section" id="kepemilikan-kekayaan-intelektual">
+                <h2>©️ 5. Kepemilikan Kekayaan Intelektual</h2>
+                <p>
+                    Semua Konten di Website, termasuk namun tidak terbatas pada teks, desain, grafis, logo, ikon, gambar, video, dan software, adalah milik <strong>PT HADAR ARTHA PRAKASA</strong> atau pemberi lisensi kami dan dilindungi oleh hukum kekayaan intelektual.
+                </p>
+                
+                <h3>Hak Cipta</h3>
+                <p>
+                    Anda tidak diperkenankan menggandakan, mendistribusikan, memodifikasi, atau menggunakan ulang Konten tanpa izin tertulis dari <strong>PT HADAR ARTHA PRAKASA</strong>.
+                </p>
+
+                <h3>Merek Dagang</h3>
+                <p>
+                    Nama "<strong>PT HADAR ARTHA PRAKASA</strong>" dan logo terkait adalah merek dagang terdaftar milik Perusahaan. Penggunaan tanpa izin dapat melanggar hukum merek dagang.
+                </p>
+
+                <h3>Karya Klien</h3>
+                <p>
+                    Untuk karya yang dibuat untuk klien, hak kepemilikan akan diatur dalam kontrak terpisah sesuai dengan kesepakatan bersama.
+                </p>
+            </div>
+
+            <div class="section" id="kewajiban-pengguna">
+                <h2>✅ 6. Kewajiban Pengguna</h2>
+                <p>
+                    Sebagai Pengguna, Anda setuju untuk:
+                </p>
+                <ul>
+                    <li>Memberikan informasi yang akurat dan terkini</li>
+                    <li>Menjaga kerahasiaan informasi login dan akses</li>
+                    <li>Tidak membagikan akses kepada pihak ketiga tanpa izin</li>
+                    <li>Mematuhi semua hukum dan peraturan yang berlaku</li>
+                    <li>Tidak menggunakan layanan untuk tujuan yang merugikan pihak lain</li>
+                    <li>Melaporkan masalah atau pelanggaran keamanan kepada kami</li>
+                </ul>
+
+                <h3>Kewajiban Klien</h3>
+                <p>
+                    Klien juga setuju untuk:
+                </p>
+                <ul>
+                    <li>Memberikan brief dan materi yang diperlukan tepat waktu</li>
+                    <li>Memberikan feedback dan konfirmasi sesuai timeline</li>
+                    <li>Melakukan pembayaran sesuai kesepakatan</li>
+                    <li>Bertanggung jawab atas konten yang disediakan untuk proyek</li>
+                </ul>
+            </div>
+
+            <div class="section" id="pembatasan-kerugian">
+                <h2>⚖️ 7. Pembatasan Kerugian</h2>
+                <p>
+                    Sejauh diizinkan oleh hukum, <strong>PT HADAR ARTHA PRAKASA</strong> tidak bertanggung jawab atas:
+                </p>
+                <ul>
+                    <li>Kerugian tidak langsung, insidental, atau konsekuensial</li>
+                    <li>Kehilangan data, keuntungan, atau peluang bisnis</li>
+                    <li>Kerusakan sistem atau perangkat akibat penggunaan Website</li>
+                    <li>Konten dari pihak ketiga yang dapat diakses melalui Website kami</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h4>⚠️ BATASAN TANGGUNG JAWAB</h4>
+                    <p>Tanggung jawab maksimal kami terbatas pada jumlah yang Anda bayarkan untuk layanan dalam periode 12 bulan terakhir.</p>
+                </div>
+            </div>
+
+            <div class="section" id="privasi">
+                <h2>🔒 8. Privasi dan Data Pribadi</h2>
+                <p>
+                    Privasi Anda adalah prioritas kami. Pengumpulan, penggunaan, dan perlindungan Data Pribadi Anda diatur dalam Kebijakan Privasi kami yang merupakan bagian tidak terpisahkan dari Syarat ini.
+                </p>
+                <p>
+                    Dengan menggunakan Website kami, Anda setuju dengan pengumpulan dan penggunaan Data Pribadi sesuai dengan Kebijakan Privasi yang berlaku.
+                </p>
+            </div>
+
+            <div class="section" id="perubahan-layanan">
+                <h2>🔄 9. Perubahan Layanan</h2>
+                <p>
+                    <strong>PT HADAR ARTHA PRAKASA</strong> berhak untuk:
+                </p>
+                <ul>
+                    <li>Memodifikasi, menghentikan, atau mengganti Layanan kapan saja</li>
+                    <li>Memperbarui atau mengubah Website tanpa pemberitahuan sebelumnya</li>
+                    <li>Menambah atau menghapus fitur Layanan</li>
+                </ul>
+                <p>
+                    Kami akan berusaha memberikan pemberitahuan untuk perubahan signifikan yang memengaruhi pengalaman Anda.
+                </p>
+            </div>
+
+            <div class="section" id="perubahan-syarat-ketentuan">
+                <h2>📝 10. Perubahan Syarat dan Ketentuan</h2>
+                <p>
+                    Kami dapat memperbarui Syarat ini dari waktu ke waktu. Perubahan akan berlaku efektif segera setelah dipublikasikan di Website. Penggunaan Anda yang berkelanjutan merupakan penerimaan terhadap perubahan tersebut.
+                </p>
+                <p>
+                    Perubahan material akan diberitahukan melalui:
+                </p>
+                <ul>
+                    <li>Pemberitahuan di Website</li>
+                    <li>Email ke Pengguna terdaftar</li>
+                    <li>Pemberitahuan langsung untuk Klien aktif</li>
+                </ul>
+            </div>
+
+            <div class="section" id="hukum-yang-berlaku">
+                <h2>⚖️ 11. Hukum yang Berlaku</h2>
+                <p>
+                    Syarat dan Ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia. Setiap sengketa yang timbul dari atau berhubungan dengan Syarat ini akan diselesaikan melalui:
+                </p>
+                <ul>
+                    <li><span class="highlight">Negosiasi damai</span> terlebih dahulu</li>
+                    <li><span class="highlight">Mediasi</span> jika negosiasi gagal</li>
+                    <li><span class="highlight">Pengadilan Negeri Jakarta Timur</span> sebagai yurisdiksi eksklusif</li>
+                </ul>
+                
+                <h3>Bahasa</h3>
+                <p>
+                    Syarat ini disusun dalam Bahasa Indonesia. Jika terdapat perbedaan antara versi Bahasa Indonesia dan terjemahan lainnya, versi Bahasa Indonesia yang berlaku.
+                </p>
+            </div>
+
+            <div class="section" id="kontak">
+                <h2>📞 12. Kontak</h2>
+                <p>
+                    Jika Anda memiliki pertanyaan, keluhan, atau memerlukan klarifikasi mengenai Syarat dan Ketentuan ini, silakan hubungi kami:
+                </p>
+                
+                <div class="contact-info">
+                    <h3>🏢 PT HADAR ARTHA PRAKASA</h3>
+                    <p><strong>Alamat:</strong> Jl. Masjid Al-Khoir 2 No. 88B, Cilangkap, Cipayung, Jakarta Timur 13870</p>
+                    <p><strong>Email:</strong> legal@hadararthaprakasa.co.id</p>
+                    <p><strong>Telepon:</strong> +62 823-1059-8328</p>
+                    <p><strong>Website:</strong> www.hadararthaprakasa.co.id</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>📅 TANGGAL BERLAKU</h4>
+                    <p>Syarat dan Ketentuan ini berlaku efektif sejak 20 Agustus 2024 dan akan terus berlaku hingga diubah atau dihentikan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>PT HADAR ARTHA PRAKASA</h3>
+            <p>
+                Mitra kreatif terpercaya untuk solusi periklanan, event, dan digital marketing terdepan di Indonesia. Syarat dan ketentuan ini melindungi hak Anda dan kami.
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 <strong>PT HADAR ARTHA PRAKASA</strong>. All rights reserved. | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-to-top" id="scrollToTop">↑</a>
+
+    <script>
+        // Scroll to top functionality
+        const scrollToTop = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTop.classList.add('visible');
+            } else {
+                scrollToTop.classList.remove('visible');
+            }
+        });
+        
+        scrollToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation links and TOC
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation to sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply observer to sections
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Highlight current section in TOC when scrolling
+        const sections = document.querySelectorAll('.section[id]');
+        const tocLinks = document.querySelectorAll('.toc a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.style.fontWeight = 'normal';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.fontWeight = 'bold';
+                }
+            });
+        });
+
+        // Console branding
+        console.log('%c📋 PT HADAR ARTHA PRAKASA - Terms and Conditions', 'font-size: 20px; font-weight: bold; color: #43e97b;');
+        console.log('%cFair terms for creative partnerships! 🤝', 'font-size: 14px; color: #38f9d7;');
+    </script>
+</body>
+</html>
